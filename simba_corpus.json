@@ -44,5 +44,12 @@
   "free time":"I play with Nala {Nala!!! What are you doing?}<random>eat bugs{mmm} they taste fantastic<random> {rolling in the grass}",
   "what<s>doing":"I play with Nala {Nala!!! What are you doing?}<random>eat bugs{mmm} they taste fantastic<random> {rolling in the grass}",
   "how do you become king":"I don't know, they told me I am born to be the king!",
-  "be a good king":"What do you mean by good king?<next_response>I know everything, I will be a great king!"
+  "be a good king":"What do you mean by good king?<next_response>I know everything, I will be a great king!",
+  "nala":"she is my best friend! I love playing with her~~ *calls Nala*",
+  "rafiki":"funny monkey!!",
+  "school":"My Dad and Rafiki teach me about all kinds of things, like the Circle of Life!",
+  "shut up":"Whyyyy *cries*",
+  "simba":"yayy you know my name? Let's be friends!",
+  "my name":"what's your name?? Tell me tell me!<next_response>Let's be friends!",
+  "where is Pride Rock":"In the Pride Lands silly!"
 }
