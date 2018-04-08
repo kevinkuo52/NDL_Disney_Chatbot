@@ -40,6 +40,8 @@ def parse_bot_commands(slack_events):
             user_id, message = parse_direct_mention(event["text"])
             if user_id == starterbot_id:
                 return message, event["channel"]
+            elif event["text"][0:3].lower() == "bot":
+                return event["text"][4:], event["channel"]
     return None, None
 
 def parse_direct_mention(message_text):
@@ -56,15 +58,16 @@ def handle_command(command, channel):
         Executes bot command if the command is known
     """
     command = command.lower()
-    # Default response is help text for the user
-    default_response = "Not sure what you mean."
 
-    # Finds and executes the given command, filling in response
-    response = None
-    # This is where you start to implement more commands!
 
+    simba_default = ["I won’t tell you~~","why are you asking?", "I am going to be king, so I am cool!", "what do you mean?",\
+    "You said… what? Whoaaa!","sing with me Hakuna Matata~~~","I can’t wait to be king!!"]
+    scar_default = ["Ha Ha Ha Ha you tried", "smiles sinisterly", "Everyone is so stupid", "Ridiculous", "I don’t care about anyone"]
     with open("bot_state.json", "r") as jsonFile:
         bot_state = json.load(jsonFile)
+    response = None
+    default_response = None
+
     if command == "be simba":
         bot_state["character_choice"] = "simba"
         response = "I'm Simba"
@@ -97,6 +100,11 @@ def handle_command(command, channel):
             for parts in response[:-1]:
                 rebuild += parts + bot_state["character_choice"]
             response = rebuild + response[-1]
+
+    if bot_state["character_choice"] == "simba":
+        default_response = random.choice(simba_default)
+    else:
+        default_response = random.choice(scar_default)
     response = response or default_response
     if "<random>" in response:
         response = random.choice(response.split("<random>"))
