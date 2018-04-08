@@ -70,11 +70,11 @@ def handle_command(command, channel):
 
     if command == "be simba":
         bot_state["character_choice"] = "simba"
-        response = "I'm Simba"
+        response = "Simba here! What’s your name??"
         bot_state["next_response_Flag"] = "False"
     elif command == "be scar":
         bot_state["character_choice"] = "scar"
-        response = "I'm Scar"
+        response = " I am Scar, the one who should be king of Pride Rock! And you are?"
         bot_state["next_response_Flag"] = "False"
     elif bot_state["character_choice"] == "":
         response = "Please pick a character first. I can be Simba or Scar! \n Type: \"be simba\" " \
