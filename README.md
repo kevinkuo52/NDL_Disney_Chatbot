@@ -10,7 +10,7 @@ It is implemented on Slack, and ideally, we can implement it on the website we c
 
 -Starting point: user picks the character between "Simba"(teenager) and "Scar";
 
--User asks questions to the chatbot, chatbot takes certain keywords (that we have generated) and replies;
+-User message to the chatbot, use @hakuna_ma_bot_a to trigger, then the bot takes certain keywords (that we have generated) and replies;
 
 -Replies are tailored to the personality chosen, and personalities are based on the movie script;
 
