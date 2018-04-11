@@ -14,8 +14,6 @@ It is implemented on Slack, and ideally, we can implement it on the website we c
 
 -Replies are tailored to the personality chosen, and personalities are based on the movie script;
 
--If an input does not match with any of the preset keywords, then it defaults to a base answers;
-
 -Some answers given by the bot have more than one possible answer, so the response is randomized;
 
 -Some Q&A are more than one layer of the decision tree
