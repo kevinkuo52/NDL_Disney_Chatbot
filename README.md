@@ -18,5 +18,5 @@ It is implemented on Slack, and ideally, we can implement it on the website we c
 
 -Some Q&A are more than one layer of the decision tree
 
-credit:
+## credit:
 we pulled tf_idf.py and previous_chats.json from https://github.com/vaibhavgeek/retrieval-based-chatbot and edited it for our project 
